@@ -7,7 +7,7 @@
 二、实现步骤：
 
 1、new_crawl_wechat.py
-根据https://github.com/songluyi/crawl_wechat上的方法从机器学习相关微信公众号中批量爬取文章，并提取文章中所有的github的url，保存github地址及原始文章地址于Mysql数据库中。
+根据https://github.com/songluyi/crawl_wechat     上的方法从机器学习相关微信公众号中批量爬取文章，并提取文章中所有的github的url，保存github地址及原始文章地址于Mysql数据库中。
 
 2、getGithub.py:
 根据github地址获取github中的相关信息（如url, title,description,stars,collect_time,source_url），保存于数据库中。
