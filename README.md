@@ -1,7 +1,9 @@
 # wechat_flask
 
 一、操作环境：
-本机：win7 64位，python 3.6.3
+
+本地：win7 64位，python 3.6.3
+
 服务器：腾讯云服务器，Ubuntu 16.04，python 3.7.0
 
 二、实现步骤：
