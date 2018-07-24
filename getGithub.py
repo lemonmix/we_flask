@@ -12,9 +12,7 @@ class get_from_github(object):
     def get_url_from_mysql(self):
         db = pymysql.connect(user='root', password='root', database='data', port=3306, charset='utf8')
         cursor = db.cursor()
-        # sql = "INSERT INTO wechat_db(nick_name,app_uni,msg_title,msg_desc,msg_url,publish_time) VALUES(%s,%s,%s,%s,%s,%s)"
         sql = "SELECT DISTINCT github FROM github_adr"
-        # cursor.executemany(sql,data)
         cursor.execute(sql)
         url_lists = cursor.fetchall()
         url_res = list(url_lists)

@@ -13,9 +13,7 @@ app = Flask(__name__)
 def index():
     db = pymysql.connect(user='root', password='root', database='data', port=3306, charset='utf8')
     cursor = db.cursor()
-    # sql = "INSERT INTO wechat_db(nick_name,app_uni,msg_title,msg_desc,msg_url,publish_time) VALUES(%s,%s,%s,%s,%s,%s)"
     sql = "SELECT * FROM github_info"
-    # cursor.executemany(sql,data)
     cursor.execute(sql)
     info_lists = cursor.fetchall()
     info_res = list(info_lists)
