@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Github</title>
+</head>
+<body>
+<table border='1'>
+<tr>
+        <th>url</th>
+        <th>title</th>
+        <th>description</th>
+        <th>stars</th>
+        <th>collect_time</th>
+        <th>source_url</th>
+        <tbody>
+      <meta charset="UTF-8">
+      {% for info in info_list %}
+        <tr>
+            <td><a href="{{info.url}}" target="_top">{{info.url}}</a></td>
+            <td>{{ info.title}}</td>
+            <td>{{ info.description}}</td>
+            <td>{{ info.stars}}</td>
+			<td>{{ info.collect_time}}</td>
+            <td><a href="{{info.source_url}}" target="_top">{{info.title}}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+
+</tr>
+
+</body>
+</html>
+
